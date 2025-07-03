@@ -1,0 +1,118 @@
+.gogn-podcast-listing {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.gogn-podcast-listing a {
+    text-decoration: none;
+    width: 200px;
+}
+.gogn-podcast-listing div {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    background: #fff;
+    transition: box-shadow 0.2s;
+}
+.gogn-podcast-listing div:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.gogn-podcast-listing img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+.gogn-podcast-listing p {
+    font-size: 0.9em;
+    color: #555;
+    margin: 5px 0 0;
+}
+.gogn-podcast-schedule {
+    font-style: italic;
+}
+.gogn-podcast-filter {
+    margin-bottom: 25px;
+}
+.gogn-podcast-categories {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+.gogn-podcast-categories li {
+    display: inline-block;
+}
+.gogn-podcast-categories a {
+    text-decoration: none;
+    color: #0073aa;
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 3px;
+    transition: background 0.2s, color 0.2s;
+}
+.gogn-podcast-categories a:hover {
+    background: #f1f1f1;
+}
+.gogn-podcast-categories li.active a {
+    background: #0073aa;
+    color: #fff;
+}
+.gogn-podcast-search {
+    margin-bottom: 20px;
+}
+.gogn-podcast-search-input {
+    padding: 8px;
+    font-size: 1em;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.gogn-podcast-search-button {
+    padding: 17px 17px;
+    font-size: 1em;
+    background: #0073aa;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 1px;
+}
+.gogn-podcast-search-button:hover {
+    background: #005f8a;
+}
+.gogn-podcast-listing.loading {
+    opacity: 0.5;
+}
+.loading-spinner {
+    text-align: center;
+    font-size: 1em;
+    color: #555;
+    padding: 20px;
+}
+p.error {
+    color: #d32f2f;
+    font-size: 1em;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #d32f2f;
+    border-radius: 5px;
+}
+.gogn-podcast-search {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+.gogn-podcast-listing h3{
+    padding-top: 15px;
+}
+@media screen and (max-width: 600px) {
+    .gogn-podcast-listing a {
+    width: 100% !important;
+}
+}
+@media screen and (min-width: 600px) and (max-width: 600px) {
+    .gogn-podcast-listing a {
+    width: 47% !important;
+}
+}
